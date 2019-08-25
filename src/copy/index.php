@@ -12,8 +12,6 @@
 	<p><button id="click-me">Click Me</button></p>
 
 	<!-- Scripts -->
-	<script src="js/detects.js"></script>
-	<script src="js/another-file.js"></script>
-	<script src="js/main.polyfills.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
