@@ -12,10 +12,14 @@
 /* line 5, src/sass/components/_base.scss */
 html {
   font-size: 62.5%;
-  /* font-size 1em = 10px on default browser settings */
 }
 
-/* line 16, src/sass/components/_base.scss */
+/* line 9, src/sass/components/_base.scss */
+body {
+  font-size: 1.8rem;
+}
+
+/* line 13, src/sass/components/_base.scss */
 input,
 textarea,
 select,
