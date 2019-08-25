@@ -1,16 +1,16 @@
 {
-	"name": "project-name",
+	"name": "guerra-family",
 	"version": "0.0.1",
 	"description": "A description for your project.",
-	"main": "./dist/your-main-js-file.js",
+	"main": "./dist/js/main.js",
 	"author": {
-		"name": "YOUR NAME",
-		"url": "http://link-to-your-website.com"
+		"name": "Jose Guerra",
+		"url": "https://guerrafamily.info"
 	},
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "http://link-to-your-git-repo.com"
+		"url": "https://github.com/jsguerra/simple-website-concept.git"
 	},
 	"boilerplate": {
 		"version": "2.2.3",
