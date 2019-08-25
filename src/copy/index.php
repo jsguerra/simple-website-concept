@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Copy Me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-	<h1>Copy Me</h1>
-
-	<p>Anything you put in the <code>copy</code> directory gets copied as-is into the <code>dist</code> directory.</p>
-
-	<p><button id="click-me">Click Me</button></p>
-
+  <header>
+  </header>
+  <main>
+  </main>
+  <footer>
+  </footer>
 	<!-- Scripts -->
 	<script src="js/main.js"></script>
 </body>
