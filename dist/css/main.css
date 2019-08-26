@@ -370,22 +370,121 @@ template {
 /* line 5, src/sass/components/_base.scss */
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
-/* line 9, src/sass/components/_base.scss */
+/* line 10, src/sass/components/_base.scss */
 body {
   font-size: 2rem;
+  height: 100%;
+}
+
+/* line 15, src/sass/components/_base.scss */
+.compartment {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90rem;
+}
+
+/* line 3, src/sass/layout/_header.scss */
+.site-header .inner-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 90rem;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+/* line 12, src/sass/layout/_header.scss */
+.site-header p {
+  margin-bottom: 0;
+}
+
+/* line 18, src/sass/layout/_header.scss */
+.site-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
 }
 
 /* line 60, src/sass/utility/_utility.scss */
-nav ul, nav ul ul {
+.site-nav ul, .site-nav ul ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 /* line 66, src/sass/utility/_utility.scss */
-nav ul li {
+.site-nav ul li {
   margin: 0;
   padding: 0;
+}
+
+/* line 1, src/sass/layout/_footer.scss */
+.site-footer {
+  background-color: #222;
+  color: white;
+  margin-top: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* line 8, src/sass/layout/_footer.scss */
+.site-footer p {
+  margin-bottom: 0;
+}
+
+/* line 12, src/sass/layout/_footer.scss */
+.site-footer a {
+  color: white;
+}
+
+/* line 1, src/sass/components/_images.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 1, src/sass/pages/_home.scss */
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+/* line 7, src/sass/pages/_home.scss */
+.home article header {
+  background-color: #f5f9fa;
+  margin-bottom: 2rem;
+  padding: 6rem;
+  text-align: center;
+}
+
+/* line 15, src/sass/pages/_home.scss */
+.home .entry {
+  padding: 2rem 6rem 4rem;
+}
+
+/* line 19, src/sass/pages/_home.scss */
+.home figure {
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  max-width: 22.3rem;
 }
