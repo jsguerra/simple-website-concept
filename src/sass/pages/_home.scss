@@ -1,0 +1,25 @@
+.home {
+  display: flex;
+  flex-flow: column;
+
+  article {
+
+    header {
+      background-color: $off-white;
+      margin-bottom: 2rem;
+      padding: 6rem;
+      text-align: center;
+    }
+  }
+
+  .entry {
+    padding: 2rem 6rem 4rem;
+  }
+
+  figure {
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    max-width: 22.3rem;
+  }
+}
