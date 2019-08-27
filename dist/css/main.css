@@ -386,7 +386,13 @@ body {
   max-width: 90rem;
 }
 
-/* line 3, src/sass/layout/_header.scss */
+/* line 1, src/sass/layout/_header.scss */
+.site-header {
+  background-color: #1e73be;
+  color: white;
+}
+
+/* line 5, src/sass/layout/_header.scss */
 .site-header .inner-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,12 +409,12 @@ body {
   padding: 1rem 0;
 }
 
-/* line 12, src/sass/layout/_header.scss */
+/* line 14, src/sass/layout/_header.scss */
 .site-header p {
   margin-bottom: 0;
 }
 
-/* line 18, src/sass/layout/_header.scss */
+/* line 20, src/sass/layout/_header.scss */
 .site-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -430,6 +436,101 @@ body {
 .site-nav ul li {
   margin: 0;
   padding: 0;
+}
+
+/* line 1, src/sass/layout/_navigation.scss */
+.burger {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+}
+
+/* line 8, src/sass/layout/_navigation.scss */
+.burger:hover {
+  cursor: pointer;
+}
+
+/* line 12, src/sass/layout/_navigation.scss */
+.burger::before, .burger::after {
+  content: '';
+  width: 90%;
+  height: 4px;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/* line 21, src/sass/layout/_navigation.scss */
+.burger::before {
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  margin-top: -15px;
+}
+
+/* line 30, src/sass/layout/_navigation.scss */
+.burger::after {
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-box-shadow: 0 1.5rem 0 0 white;
+          box-shadow: 0 1.5rem 0 0 white;
+}
+
+/* line 40, src/sass/layout/_navigation.scss */
+.burger-text {
+  display: block;
+  font-size: 0;
+  color: white;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+/* line 47, src/sass/layout/_navigation.scss */
+.burger-text::after {
+  content: '';
+  width: 4.4rem;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+/* line 62, src/sass/layout/_navigation.scss */
+.open::before {
+  margin-top: 0;
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* line 67, src/sass/layout/_navigation.scss */
+.open::after {
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+          transform: translate(-50%, -50%) rotate(-135deg);
+  -webkit-box-shadow: 0 0 0 0 white;
+          box-shadow: 0 0 0 0 white;
+}
+
+/* line 75, src/sass/layout/_navigation.scss */
+.open .burger-text::after {
+  left: 100%;
+  opacity: 0;
 }
 
 /* line 1, src/sass/layout/_footer.scss */
