@@ -534,7 +534,6 @@ body {
 
 /* line 89, src/sass/layout/_navigation.scss */
 .open .burger-text::after {
-  left: 100%;
   opacity: 0;
 }
 
