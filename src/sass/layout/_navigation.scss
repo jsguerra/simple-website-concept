@@ -1,9 +1,23 @@
+// Site Navigation
+// =====================================
+.site-nav {
+  display: none;
+
+  ul {
+    @include list-reset;
+    display: flex;
+    flex-flow: row;
+  }
+}
+
+// The burger menu
+// ====================================
 .burger {
   background-color: transparent;
   border: 0;
   position: relative;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
   
   &:hover {
     cursor: pointer;
@@ -13,7 +27,7 @@
   &::after {
     content: '';
     width: 90%;
-    height: 4px;
+    height: 0.2rem;
     position: absolute;
     transition: 0.3s ease;
   }
@@ -24,7 +38,7 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
     transform-origin: 50% 50%;
-    margin-top: -15px;
+    margin-top: -0.8rem;
   }
   
   &::after {
@@ -33,7 +47,7 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
     transform-origin: 50% 50%;
-    box-shadow: 0 1.5rem 0 0 white;
+    box-shadow: 0 0.8rem 0 0 white;
   }
 }
 
@@ -46,8 +60,8 @@
   
   &::after {
     content: '';
-    width: 4.4rem;
-    height: 4px;
+    width: 2.7rem;
+    height: 0.2rem;
     background-color: white;
     position: absolute;
     top: 50%;
