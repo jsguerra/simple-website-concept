@@ -414,7 +414,12 @@ body {
   margin-bottom: 0;
 }
 
-/* line 20, src/sass/layout/_header.scss */
+/* line 3, src/sass/layout/_navigation.scss */
+.site-nav {
+  display: none;
+}
+
+/* line 6, src/sass/layout/_navigation.scss */
 .site-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,31 +443,31 @@ body {
   padding: 0;
 }
 
-/* line 1, src/sass/layout/_navigation.scss */
+/* line 15, src/sass/layout/_navigation.scss */
 .burger {
   background-color: transparent;
   border: 0;
   position: relative;
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
 }
 
-/* line 8, src/sass/layout/_navigation.scss */
+/* line 22, src/sass/layout/_navigation.scss */
 .burger:hover {
   cursor: pointer;
 }
 
-/* line 12, src/sass/layout/_navigation.scss */
+/* line 26, src/sass/layout/_navigation.scss */
 .burger::before, .burger::after {
   content: '';
   width: 90%;
-  height: 4px;
+  height: 0.2rem;
   position: absolute;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
-/* line 21, src/sass/layout/_navigation.scss */
+/* line 35, src/sass/layout/_navigation.scss */
 .burger::before {
   background-color: white;
   top: 50%;
@@ -471,10 +476,10 @@ body {
           transform: translate(-50%, -50%) rotate(0deg);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  margin-top: -15px;
+  margin-top: -0.8rem;
 }
 
-/* line 30, src/sass/layout/_navigation.scss */
+/* line 44, src/sass/layout/_navigation.scss */
 .burger::after {
   background-color: transparent;
   top: 50%;
@@ -483,11 +488,11 @@ body {
           transform: translate(-50%, -50%) rotate(0deg);
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  -webkit-box-shadow: 0 1.5rem 0 0 white;
-          box-shadow: 0 1.5rem 0 0 white;
+  -webkit-box-shadow: 0 0.8rem 0 0 white;
+          box-shadow: 0 0.8rem 0 0 white;
 }
 
-/* line 40, src/sass/layout/_navigation.scss */
+/* line 54, src/sass/layout/_navigation.scss */
 .burger-text {
   display: block;
   font-size: 0;
@@ -496,11 +501,11 @@ body {
   position: relative;
 }
 
-/* line 47, src/sass/layout/_navigation.scss */
+/* line 61, src/sass/layout/_navigation.scss */
 .burger-text::after {
   content: '';
-  width: 4.4rem;
-  height: 4px;
+  width: 2.7rem;
+  height: 0.2rem;
   background-color: white;
   position: absolute;
   top: 50%;
@@ -511,14 +516,14 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 62, src/sass/layout/_navigation.scss */
+/* line 76, src/sass/layout/_navigation.scss */
 .open::before {
   margin-top: 0;
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* line 67, src/sass/layout/_navigation.scss */
+/* line 81, src/sass/layout/_navigation.scss */
 .open::after {
   background-color: white;
   -webkit-transform: translate(-50%, -50%) rotate(-135deg);
@@ -527,7 +532,7 @@ body {
           box-shadow: 0 0 0 0 white;
 }
 
-/* line 75, src/sass/layout/_navigation.scss */
+/* line 89, src/sass/layout/_navigation.scss */
 .open .burger-text::after {
   left: 100%;
   opacity: 0;
