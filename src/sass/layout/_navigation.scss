@@ -1,12 +1,39 @@
 // Site Navigation
 // =====================================
 .site-nav {
-  display: none;
+  // display: none;
+  position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 5rem;
+	background-color: rgb(207,100,154);
+  background-color: rgba(207,100,154,0.9);
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 
   ul {
     @include list-reset;
-    display: flex;
-    flex-flow: row;
+    width: 100%;
+    text-align: center;
+
+    li {
+      font-size: 3.6rem;
+      padding: 0.8rem;
+
+      a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: white;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+    }
   }
 }
 
@@ -71,17 +98,27 @@
   }
 }
 
-.open {
-  
-  &::before {
-    margin-top: 0;
-    transform: translate(-50%, -50%) rotate(135deg);
+// when the burger menu is clicked
+// =========================================
+.is-active {
+
+  .site-nav {
+    height: 100vh;
+    padding-top: 6rem;
   }
   
-  &::after {
-    background-color: white;
-    transform: translate(-50%, -50%) rotate(-135deg);
-    box-shadow: 0 0 0 0 white;
+  .burger {
+
+    &::before {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+    
+    &::after {
+      background-color: white;
+      transform: translate(-50%, -50%) rotate(-135deg);
+      box-shadow: 0 0 0 0 white;
+    }
   }
   
   .burger-text {
