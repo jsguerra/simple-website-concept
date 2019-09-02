@@ -1,5 +1,6 @@
-var burger = document.querySelector('.burger');
+var burger = document.querySelector('.burger'),
+    body = document.querySelector('body');
   
 burger.addEventListener('click', function() {
-  burger.classList.toggle('open');
+  body.classList.toggle('is-active');
 });
