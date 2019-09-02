@@ -416,18 +416,25 @@ body {
 
 /* line 3, src/sass/layout/_navigation.scss */
 .site-nav {
-  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 5rem;
+  background-color: #cf649a;
+  background-color: rgba(207, 100, 154, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  width: 100vw;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-/* line 6, src/sass/layout/_navigation.scss */
+/* line 18, src/sass/layout/_navigation.scss */
 .site-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+  width: 100%;
+  text-align: center;
 }
 
 /* line 60, src/sass/utility/_utility.scss */
@@ -443,7 +450,24 @@ body {
   padding: 0;
 }
 
-/* line 15, src/sass/layout/_navigation.scss */
+/* line 23, src/sass/layout/_navigation.scss */
+.site-nav ul li {
+  font-size: 3.6rem;
+  padding: 0.8rem;
+}
+
+/* line 27, src/sass/layout/_navigation.scss */
+.site-nav ul li a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* line 42, src/sass/layout/_navigation.scss */
 .burger {
   background-color: transparent;
   border: 0;
@@ -452,12 +476,12 @@ body {
   height: 3rem;
 }
 
-/* line 22, src/sass/layout/_navigation.scss */
+/* line 49, src/sass/layout/_navigation.scss */
 .burger:hover {
   cursor: pointer;
 }
 
-/* line 26, src/sass/layout/_navigation.scss */
+/* line 53, src/sass/layout/_navigation.scss */
 .burger::before, .burger::after {
   content: '';
   width: 90%;
@@ -467,7 +491,7 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 35, src/sass/layout/_navigation.scss */
+/* line 62, src/sass/layout/_navigation.scss */
 .burger::before {
   background-color: white;
   top: 50%;
@@ -479,7 +503,7 @@ body {
   margin-top: -0.8rem;
 }
 
-/* line 44, src/sass/layout/_navigation.scss */
+/* line 71, src/sass/layout/_navigation.scss */
 .burger::after {
   background-color: transparent;
   top: 50%;
@@ -492,7 +516,7 @@ body {
           box-shadow: 0 0.8rem 0 0 white;
 }
 
-/* line 54, src/sass/layout/_navigation.scss */
+/* line 81, src/sass/layout/_navigation.scss */
 .burger-text {
   display: block;
   font-size: 0;
@@ -501,7 +525,7 @@ body {
   position: relative;
 }
 
-/* line 61, src/sass/layout/_navigation.scss */
+/* line 88, src/sass/layout/_navigation.scss */
 .burger-text::after {
   content: '';
   width: 2.7rem;
@@ -516,15 +540,21 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 76, src/sass/layout/_navigation.scss */
-.open::before {
+/* line 105, src/sass/layout/_navigation.scss */
+.is-active .site-nav {
+  height: 100vh;
+  padding-top: 6rem;
+}
+
+/* line 112, src/sass/layout/_navigation.scss */
+.is-active .burger::before {
   margin-top: 0;
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* line 81, src/sass/layout/_navigation.scss */
-.open::after {
+/* line 117, src/sass/layout/_navigation.scss */
+.is-active .burger::after {
   background-color: white;
   -webkit-transform: translate(-50%, -50%) rotate(-135deg);
           transform: translate(-50%, -50%) rotate(-135deg);
@@ -532,13 +562,15 @@ body {
           box-shadow: 0 0 0 0 white;
 }
 
-/* line 89, src/sass/layout/_navigation.scss */
-.open .burger-text::after {
+/* line 126, src/sass/layout/_navigation.scss */
+.is-active .burger-text::after {
   opacity: 0;
 }
 
 /* line 1, src/sass/layout/_footer.scss */
 .site-footer {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
   background-color: #222;
   color: white;
   margin-top: auto;
@@ -546,12 +578,12 @@ body {
   text-align: center;
 }
 
-/* line 8, src/sass/layout/_footer.scss */
+/* line 10, src/sass/layout/_footer.scss */
 .site-footer p {
   margin-bottom: 0;
 }
 
-/* line 12, src/sass/layout/_footer.scss */
+/* line 14, src/sass/layout/_footer.scss */
 .site-footer a {
   color: white;
 }
@@ -582,14 +614,25 @@ img {
 }
 
 /* line 15, src/sass/pages/_home.scss */
-.home .entry {
-  padding: 2rem 6rem 4rem;
+.home .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-/* line 19, src/sass/pages/_home.scss */
-.home figure {
-  float: left;
-  margin-right: 2rem;
-  margin-bottom: 2rem;
-  max-width: 22.3rem;
+/* line 22, src/sass/pages/_home.scss */
+.home .family-crest {
+  margin-right: 4rem;
+  max-width: 29%;
+}
+
+/* line 27, src/sass/pages/_home.scss */
+.home .entry {
+  max-width: 71%;
 }
