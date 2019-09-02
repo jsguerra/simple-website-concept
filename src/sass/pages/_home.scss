@@ -12,14 +12,19 @@
     }
   }
 
-  .entry {
-    padding: 2rem 6rem 4rem;
+  .main-content {
+    display: flex;
+    flex-flow: row;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
-  figure {
-    float: left;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-    max-width: 22.3rem;
+  .family-crest {
+    margin-right: 4rem;
+    max-width: 29%;
+  }
+
+  .entry {
+    max-width: 71%;
   }
 }
