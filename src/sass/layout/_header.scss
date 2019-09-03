@@ -11,7 +11,21 @@
     padding: 1rem 0; 
   }
 
-  p {
+  .site-logo {
+    display: inline-block;
+    font-family: $font-family-1;
+    font-size: 2.1rem;
     margin-bottom: 0;
+    color: white;
+    transition: 0.5s;
+    width: 4rem;
+    height: 3rem;
+    text-align: center;
+
+    &:focus,
+    &:hover {
+      color: yellow;
+      text-decoration: none;
+    }
   }
 }
