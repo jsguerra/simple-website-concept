@@ -364,6 +364,42 @@ template {
   display: none !important;
 }
 /*! helpers - utility v0.0.1 */
+/* line 3, src/sass/utility/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/* line 8, src/sass/utility/_typography.scss */
+h1 {
+  font-size: 4rem;
+}
+
+/* line 12, src/sass/utility/_typography.scss */
+h2 {
+  font-size: 3rem;
+}
+
+/* line 16, src/sass/utility/_typography.scss */
+h3 {
+  font-size: 2.5rem;
+}
+
+/* line 20, src/sass/utility/_typography.scss */
+h4 {
+  font-size: 2rem;
+}
+
+/* line 24, src/sass/utility/_typography.scss */
+h5 {
+  font-size: 1.8rem;
+}
+
+/* line 28, src/sass/utility/_typography.scss */
+h6 {
+  font-size: 1.6rem;
+}
+
 /**
  * @section Base Styles
  */
@@ -375,7 +411,7 @@ html {
 
 /* line 10, src/sass/components/_base.scss */
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   height: 100%;
 }
 
@@ -410,8 +446,23 @@ body {
 }
 
 /* line 14, src/sass/layout/_header.scss */
-.site-header p {
+.site-header .site-logo {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
   margin-bottom: 0;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 4rem;
+  height: 3rem;
+  text-align: center;
+}
+
+/* line 25, src/sass/layout/_header.scss */
+.site-header .site-logo:focus, .site-header .site-logo:hover {
+  color: yellow;
+  text-decoration: none;
 }
 
 /* line 3, src/sass/layout/_navigation.scss */
@@ -433,7 +484,21 @@ body {
 
 /* line 18, src/sass/layout/_navigation.scss */
 .site-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: 50%;
   text-align: center;
 }
 
@@ -450,24 +515,24 @@ body {
   padding: 0;
 }
 
-/* line 23, src/sass/layout/_navigation.scss */
+/* line 28, src/sass/layout/_navigation.scss */
 .site-nav ul li {
   font-size: 3.6rem;
   padding: 0.8rem;
 }
 
-/* line 27, src/sass/layout/_navigation.scss */
+/* line 32, src/sass/layout/_navigation.scss */
 .site-nav ul li a {
-  padding: 8px;
+  padding: 0.8rem;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: white;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-/* line 42, src/sass/layout/_navigation.scss */
+/* line 47, src/sass/layout/_navigation.scss */
 .burger {
   background-color: transparent;
   border: 0;
@@ -476,12 +541,17 @@ body {
   height: 3rem;
 }
 
-/* line 49, src/sass/layout/_navigation.scss */
+/* line 54, src/sass/layout/_navigation.scss */
 .burger:hover {
   cursor: pointer;
 }
 
-/* line 53, src/sass/layout/_navigation.scss */
+/* line 57, src/sass/layout/_navigation.scss */
+.burger:hover::after, .burger:hover::before {
+  background-color: yellow;
+}
+
+/* line 63, src/sass/layout/_navigation.scss */
 .burger::before, .burger::after {
   content: '';
   width: 90%;
@@ -491,7 +561,7 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 62, src/sass/layout/_navigation.scss */
+/* line 72, src/sass/layout/_navigation.scss */
 .burger::before {
   background-color: white;
   top: 50%;
@@ -503,7 +573,7 @@ body {
   margin-top: -0.8rem;
 }
 
-/* line 71, src/sass/layout/_navigation.scss */
+/* line 81, src/sass/layout/_navigation.scss */
 .burger::after {
   background-color: transparent;
   top: 50%;
@@ -516,7 +586,7 @@ body {
           box-shadow: 0 0.8rem 0 0 white;
 }
 
-/* line 81, src/sass/layout/_navigation.scss */
+/* line 91, src/sass/layout/_navigation.scss */
 .burger-text {
   display: block;
   font-size: 0;
@@ -525,7 +595,7 @@ body {
   position: relative;
 }
 
-/* line 88, src/sass/layout/_navigation.scss */
+/* line 98, src/sass/layout/_navigation.scss */
 .burger-text::after {
   content: '';
   width: 2.7rem;
@@ -540,20 +610,20 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 105, src/sass/layout/_navigation.scss */
+/* line 115, src/sass/layout/_navigation.scss */
 .is-active .site-nav {
   height: 100vh;
   padding-top: 6rem;
 }
 
-/* line 112, src/sass/layout/_navigation.scss */
+/* line 122, src/sass/layout/_navigation.scss */
 .is-active .burger::before {
   margin-top: 0;
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* line 117, src/sass/layout/_navigation.scss */
+/* line 127, src/sass/layout/_navigation.scss */
 .is-active .burger::after {
   background-color: white;
   -webkit-transform: translate(-50%, -50%) rotate(-135deg);
@@ -562,7 +632,7 @@ body {
           box-shadow: 0 0 0 0 white;
 }
 
-/* line 126, src/sass/layout/_navigation.scss */
+/* line 136, src/sass/layout/_navigation.scss */
 .is-active .burger-text::after {
   opacity: 0;
 }
@@ -630,9 +700,15 @@ img {
 .home .family-crest {
   margin-right: 4rem;
   max-width: 29%;
+  text-align: center;
 }
 
 /* line 27, src/sass/pages/_home.scss */
+.home .family-crest figcaption {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 32, src/sass/pages/_home.scss */
 .home .entry {
   max-width: 71%;
 }
