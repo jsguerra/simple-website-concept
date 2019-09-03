@@ -7,8 +7,10 @@
 
 // Functions, mixins and variables
 // ==========================================================================
-@import 'variables';
-@import 'utility/utility';
+@import
+  'variables',
+  'utility/utility',
+  'utility/typography';
 
 
 // Initial Styles
