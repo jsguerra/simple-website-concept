@@ -1,9 +1,22 @@
 article {
+  margin-bottom: 8rem;
 
   header {
     background-color: $off-white;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
     padding: 6rem;
     text-align: center;
+  }
+
+  .home & {
+    .entry-aside {
+      width: 100%;
+      max-width: 34%;
+    }
+  
+    .entry {
+      width: 100%;
+      max-width: 65%;
+    } 
   }
 }
