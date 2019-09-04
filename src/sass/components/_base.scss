@@ -9,11 +9,26 @@
 
 body {
   font-size: 1.8rem;
+  line-height: 3rem;
   height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.intro {
+  font-size: 2rem;
+  margin-bottom: 0;
 }
 
 .compartment {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 90rem;
+}
+
+.left-column {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
