@@ -372,32 +372,43 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 8, src/sass/utility/_typography.scss */
 h1 {
-  font-size: 4rem;
+  font-size: 4.7rem;
+  line-height: 7.1rem;
 }
 
-/* line 12, src/sass/utility/_typography.scss */
+/* line 13, src/sass/utility/_typography.scss */
 h2 {
-  font-size: 3rem;
+  font-size: 3.7rem;
+  line-height: 5.7rem;
 }
 
-/* line 16, src/sass/utility/_typography.scss */
+/* line 18, src/sass/utility/_typography.scss */
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.9rem;
+  line-height: 4.5rem;
 }
 
-/* line 20, src/sass/utility/_typography.scss */
+/* line 23, src/sass/utility/_typography.scss */
 h4 {
-  font-size: 2rem;
-}
-
-/* line 24, src/sass/utility/_typography.scss */
-h5 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
+  line-height: 3.7rem;
 }
 
 /* line 28, src/sass/utility/_typography.scss */
+h5 {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+/* line 33, src/sass/utility/_typography.scss */
 h6 {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+}
+
+/* line 38, src/sass/utility/_typography.scss */
+p {
+  margin-bottom: 2rem;
 }
 
 /**
@@ -412,14 +423,43 @@ html {
 /* line 10, src/sass/components/_base.scss */
 body {
   font-size: 1.8rem;
+  line-height: 3rem;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
-/* line 15, src/sass/components/_base.scss */
+/* line 18, src/sass/components/_base.scss */
+.intro {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+/* line 23, src/sass/components/_base.scss */
 .compartment {
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
   max-width: 90rem;
+}
+
+/* line 30, src/sass/components/_base.scss */
+.left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* line 1, src/sass/layout/_header.scss */
@@ -591,11 +631,12 @@ body {
   display: block;
   font-size: 0;
   color: white;
+  line-height: 1;
   padding-bottom: 1rem;
   position: relative;
 }
 
-/* line 98, src/sass/layout/_navigation.scss */
+/* line 99, src/sass/layout/_navigation.scss */
 .burger-text::after {
   content: '';
   width: 2.7rem;
@@ -610,20 +651,20 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 115, src/sass/layout/_navigation.scss */
+/* line 116, src/sass/layout/_navigation.scss */
 .is-active .site-nav {
   height: 100vh;
   padding-top: 6rem;
 }
 
-/* line 122, src/sass/layout/_navigation.scss */
+/* line 123, src/sass/layout/_navigation.scss */
 .is-active .burger::before {
   margin-top: 0;
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* line 127, src/sass/layout/_navigation.scss */
+/* line 128, src/sass/layout/_navigation.scss */
 .is-active .burger::after {
   background-color: white;
   -webkit-transform: translate(-50%, -50%) rotate(-135deg);
@@ -632,9 +673,34 @@ body {
           box-shadow: 0 0 0 0 white;
 }
 
-/* line 136, src/sass/layout/_navigation.scss */
+/* line 137, src/sass/layout/_navigation.scss */
 .is-active .burger-text::after {
   opacity: 0;
+}
+
+/* line 1, src/sass/components/_article.scss */
+article {
+  margin-bottom: 8rem;
+}
+
+/* line 4, src/sass/components/_article.scss */
+article header {
+  background-color: #f5f9fa;
+  margin-bottom: 8rem;
+  padding: 6rem;
+  text-align: center;
+}
+
+/* line 12, src/sass/components/_article.scss */
+.home article .entry-aside {
+  width: 100%;
+  max-width: 34%;
+}
+
+/* line 17, src/sass/components/_article.scss */
+.home article .entry {
+  width: 100%;
+  max-width: 65%;
 }
 
 /* line 1, src/sass/layout/_footer.scss */
@@ -664,51 +730,12 @@ img {
   height: auto;
 }
 
-/* line 1, src/sass/pages/_home.scss */
-.home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-}
-
-/* line 7, src/sass/pages/_home.scss */
-.home article header {
-  background-color: #f5f9fa;
-  margin-bottom: 2rem;
-  padding: 6rem;
+/* line 6, src/sass/components/_images.scss */
+figure {
   text-align: center;
 }
 
-/* line 15, src/sass/pages/_home.scss */
-.home .main-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-/* line 22, src/sass/pages/_home.scss */
-.home .family-crest {
-  margin-right: 4rem;
-  max-width: 29%;
-  text-align: center;
-}
-
-/* line 27, src/sass/pages/_home.scss */
-.home .family-crest figcaption {
+/* line 10, src/sass/components/_images.scss */
+figcaption {
   font-family: "Montserrat", sans-serif;
-}
-
-/* line 32, src/sass/pages/_home.scss */
-.home .entry {
-  max-width: 71%;
 }
