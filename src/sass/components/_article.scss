@@ -2,21 +2,33 @@ article {
   margin-bottom: 8rem;
 
   header {
-    background-color: $off-white;
-    margin-bottom: 8rem;
-    padding: 6rem;
-    text-align: center;
+    display: flex;
+    flex-flow: row column;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
-  .home & {
-    .entry-aside {
-      width: 100%;
-      max-width: 34%;
+  .entry-header {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+   
+    h1 {
+      font-size: 4rem;
+      line-height: 1;
     }
-  
-    .entry {
-      width: 100%;
-      max-width: 65%;
-    } 
+
+    .intro {
+      font-size: 1.6rem;
+      color: rgba(0,0,0,0.6);
+      padding-left: 1rem;
+    }
+  }
+
+  .entry {
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 0.6rem;
+    padding: 6rem;
   }
 }
