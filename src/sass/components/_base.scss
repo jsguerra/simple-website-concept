@@ -24,11 +24,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 90rem;
+  max-width: 75rem;
 }
 
-.left-column {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+.align-left {
+  float: left;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+.align-right {
+  float: right;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
 }
