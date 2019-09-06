@@ -1,12 +1,13 @@
 .site-header {
-  background-color: $dark-blue;
+  background-color: $light-blue;
   color: white;
+  margin-bottom: 6rem;
 
   .inner-header {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    max-width: 90rem;
+    max-width: 75rem;
     margin: auto;
     padding: 1rem 0; 
   }
@@ -18,7 +19,6 @@
     margin-bottom: 0;
     color: white;
     transition: 0.5s;
-    width: 4rem;
     height: 3rem;
     text-align: center;
 
