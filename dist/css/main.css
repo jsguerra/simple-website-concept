@@ -474,6 +474,28 @@ ul, ol {
   margin-bottom: 2rem;
 }
 
+/* line 5, src/sass/components/_list.scss */
+ol {
+  counter-reset: item;
+  padding-left: 2rem;
+}
+
+/* line 9, src/sass/components/_list.scss */
+ol ol {
+  padding-left: 4rem;
+}
+
+/* line 13, src/sass/components/_list.scss */
+ol li {
+  display: block;
+}
+
+/* line 16, src/sass/components/_list.scss */
+ol li::before {
+  content: counters(item, ".") ". ";
+  counter-increment: item;
+}
+
 /* line 1, src/sass/components/_tables.scss */
 table {
   margin-bottom: 4rem;
