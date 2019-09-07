@@ -28,6 +28,7 @@
     li {
       font-size: 3.6rem;
       padding: 0.8rem;
+      margin-bottom: 2rem;
 
       a {
         padding: 0.8rem;
@@ -37,6 +38,27 @@
         display: block;
         -webkit-transition: 0.3s;
         transition: 0.3s;
+        position: relative;
+
+        &::after {
+          content: '';
+          width: 0;
+          height: 2px;
+          background-color: white;
+          position: absolute;
+          bottom: -1rem;
+          left: 50%;
+          transform: translate3d(-50%,0,0);
+          transition: 0.5s;
+        }
+
+        &:focus,
+        &:hover {
+
+          &::after {
+            width: 100%;
+          }
+        }
       }
     }
   }
