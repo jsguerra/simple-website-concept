@@ -364,51 +364,58 @@ template {
   display: none !important;
 }
 /*! helpers - utility v0.0.1 */
-/* line 3, src/sass/utility/_typography.scss */
+/* line 4, src/sass/utility/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
-/* line 8, src/sass/utility/_typography.scss */
+/* line 9, src/sass/utility/_typography.scss */
 h1 {
   font-size: 4.7rem;
   line-height: 7.1rem;
 }
 
-/* line 13, src/sass/utility/_typography.scss */
+/* line 14, src/sass/utility/_typography.scss */
 h2 {
   font-size: 3.7rem;
   line-height: 5.7rem;
 }
 
-/* line 18, src/sass/utility/_typography.scss */
+/* line 19, src/sass/utility/_typography.scss */
 h3 {
   font-size: 2.9rem;
   line-height: 4.5rem;
 }
 
-/* line 23, src/sass/utility/_typography.scss */
+/* line 24, src/sass/utility/_typography.scss */
 h4 {
   font-size: 2.3rem;
   line-height: 3.7rem;
 }
 
-/* line 28, src/sass/utility/_typography.scss */
+/* line 29, src/sass/utility/_typography.scss */
 h5 {
   font-size: 1.8rem;
   line-height: 3rem;
 }
 
-/* line 33, src/sass/utility/_typography.scss */
+/* line 34, src/sass/utility/_typography.scss */
 h6 {
   font-size: 1.4rem;
   line-height: 2.4rem;
 }
 
-/* line 38, src/sass/utility/_typography.scss */
+/* line 39, src/sass/utility/_typography.scss */
 p {
   margin-bottom: 2rem;
+}
+
+/* line 43, src/sass/utility/_typography.scss */
+blockquote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  margin: 0 3rem;
 }
 
 /**
@@ -559,9 +566,10 @@ body {
 .site-nav ul li {
   font-size: 3.6rem;
   padding: 0.8rem;
+  margin-bottom: 2rem;
 }
 
-/* line 32, src/sass/layout/_navigation.scss */
+/* line 33, src/sass/layout/_navigation.scss */
 .site-nav ul li a {
   padding: 0.8rem;
   text-decoration: none;
@@ -570,9 +578,30 @@ body {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: relative;
 }
 
-/* line 47, src/sass/layout/_navigation.scss */
+/* line 43, src/sass/layout/_navigation.scss */
+.site-nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, 0, 0);
+          transform: translate3d(-50%, 0, 0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 58, src/sass/layout/_navigation.scss */
+.site-nav ul li a:focus::after, .site-nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* line 69, src/sass/layout/_navigation.scss */
 .burger {
   background-color: transparent;
   border: 0;
@@ -581,17 +610,17 @@ body {
   height: 3rem;
 }
 
-/* line 54, src/sass/layout/_navigation.scss */
+/* line 76, src/sass/layout/_navigation.scss */
 .burger:hover {
   cursor: pointer;
 }
 
-/* line 57, src/sass/layout/_navigation.scss */
+/* line 79, src/sass/layout/_navigation.scss */
 .burger:hover::after, .burger:hover::before {
   background-color: yellow;
 }
 
-/* line 63, src/sass/layout/_navigation.scss */
+/* line 85, src/sass/layout/_navigation.scss */
 .burger::before, .burger::after {
   content: '';
   width: 90%;
@@ -601,7 +630,7 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 72, src/sass/layout/_navigation.scss */
+/* line 94, src/sass/layout/_navigation.scss */
 .burger::before {
   background-color: white;
   top: 50%;
@@ -613,7 +642,7 @@ body {
   margin-top: -0.8rem;
 }
 
-/* line 81, src/sass/layout/_navigation.scss */
+/* line 103, src/sass/layout/_navigation.scss */
 .burger::after {
   background-color: transparent;
   top: 50%;
@@ -626,7 +655,7 @@ body {
           box-shadow: 0 0.8rem 0 0 white;
 }
 
-/* line 91, src/sass/layout/_navigation.scss */
+/* line 113, src/sass/layout/_navigation.scss */
 .burger-text {
   display: block;
   font-size: 0;
@@ -636,7 +665,7 @@ body {
   position: relative;
 }
 
-/* line 99, src/sass/layout/_navigation.scss */
+/* line 121, src/sass/layout/_navigation.scss */
 .burger-text::after {
   content: '';
   width: 2.7rem;
@@ -651,20 +680,20 @@ body {
   transition: 0.3s ease;
 }
 
-/* line 116, src/sass/layout/_navigation.scss */
+/* line 138, src/sass/layout/_navigation.scss */
 .is-active .site-nav {
   height: 100vh;
   padding-top: 6rem;
 }
 
-/* line 123, src/sass/layout/_navigation.scss */
+/* line 145, src/sass/layout/_navigation.scss */
 .is-active .burger::before {
   margin-top: 0;
   -webkit-transform: translate(-50%, -50%) rotate(135deg);
           transform: translate(-50%, -50%) rotate(135deg);
 }
 
-/* line 128, src/sass/layout/_navigation.scss */
+/* line 150, src/sass/layout/_navigation.scss */
 .is-active .burger::after {
   background-color: white;
   -webkit-transform: translate(-50%, -50%) rotate(-135deg);
@@ -673,7 +702,7 @@ body {
           box-shadow: 0 0 0 0 white;
 }
 
-/* line 137, src/sass/layout/_navigation.scss */
+/* line 159, src/sass/layout/_navigation.scss */
 .is-active .burger-text::after {
   opacity: 0;
 }
