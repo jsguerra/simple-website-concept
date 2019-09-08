@@ -730,14 +730,14 @@ article {
 }
 
 /* line 4, src/sass/components/_article.scss */
-article header {
+article > header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row column;
-          flex-flow: row column;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
