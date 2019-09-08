@@ -1,9 +1,9 @@
 article {
   margin-bottom: 8rem;
 
-  header {
+  > header {
     display: flex;
-    flex-flow: row column;
+    flex-flow: row;
     justify-content: flex-start;
     margin-bottom: 1rem;
     padding-bottom: 1rem;
