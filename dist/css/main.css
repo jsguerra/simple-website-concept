@@ -370,42 +370,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-/* line 9, src/sass/utility/_typography.scss */
-h1 {
-  font-size: 4.7rem;
-  line-height: 7.1rem;
-}
-
-/* line 14, src/sass/utility/_typography.scss */
-h2 {
-  font-size: 3.7rem;
-  line-height: 5.7rem;
-}
-
-/* line 19, src/sass/utility/_typography.scss */
-h3 {
-  font-size: 2.9rem;
-  line-height: 4.5rem;
-}
-
-/* line 24, src/sass/utility/_typography.scss */
-h4 {
-  font-size: 2.3rem;
-  line-height: 3.7rem;
-}
-
-/* line 29, src/sass/utility/_typography.scss */
-h5 {
-  font-size: 1.8rem;
-  line-height: 3rem;
-}
-
-/* line 34, src/sass/utility/_typography.scss */
-h6 {
-  font-size: 1.4rem;
-  line-height: 2.4rem;
-}
-
 /* line 39, src/sass/utility/_typography.scss */
 p {
   margin-bottom: 2rem;
@@ -416,6 +380,14 @@ blockquote {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2rem;
   margin: 0 3rem;
+}
+
+/* line 49, src/sass/utility/_typography.scss */
+.section-title {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  padding-bottom: 0.5rem;
 }
 
 /**
