@@ -1,0 +1,41 @@
+.parent {
+  font-family: $font-family-1;
+  font-size: 1.4rem;
+  letter-spacing: 0.25px;
+  line-height: 1.618;
+
+  > li {
+    border-bottom: 1px solid $light-blue;
+
+    &:nth-child(even) {
+      background-color: $off-white;
+    }
+  }
+
+  .descendant {
+    border-left: 1px solid $light-blue;
+    padding: 1rem 1rem 1rem 2rem;
+  }
+
+  .female {
+    color: $pink;
+  }
+
+  .male {
+
+  }
+}
+
+.custom-aside {
+  width: 100%;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+  padding: 1rem;
+
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+}
