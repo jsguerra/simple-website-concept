@@ -464,8 +464,13 @@ ol li {
 
 /* line 16, src/sass/components/_list.scss */
 ol li::before {
+  font-size: 1rem;
   content: counters(item, ".") ". ";
   counter-increment: item;
+  margin-right: 1rem;
+  padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+  background-color: #5183f5;
+  color: white;
 }
 
 /* line 1, src/sass/components/_tables.scss */
@@ -815,6 +820,51 @@ figure {
 /* line 10, src/sass/components/_images.scss */
 figcaption {
   font-family: "Montserrat", sans-serif;
+}
+
+/* line 1, src/sass/components/_descendants.scss */
+.parent {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.25px;
+  line-height: 1.618;
+}
+
+/* line 7, src/sass/components/_descendants.scss */
+.parent > li {
+  border-bottom: 1px solid #5183f5;
+}
+
+/* line 10, src/sass/components/_descendants.scss */
+.parent > li:nth-child(even) {
+  background-color: #f5f9fa;
+}
+
+/* line 15, src/sass/components/_descendants.scss */
+.parent .descendant {
+  border-left: 1px solid #5183f5;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+/* line 20, src/sass/components/_descendants.scss */
+.parent .female {
+  color: #DB5A6B;
+}
+
+/* line 29, src/sass/components/_descendants.scss */
+.custom-aside {
+  width: 100%;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8rem;
+  padding: 1rem;
+}
+
+/* line 37, src/sass/components/_descendants.scss */
+.custom-aside .section-title {
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 /* line 3, src/sass/pages/_home.scss */
