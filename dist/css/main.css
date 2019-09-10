@@ -465,10 +465,10 @@ ol li {
 /* line 16, src/sass/components/_list.scss */
 ol li::before {
   font-size: 1rem;
-  content: counters(item, ".") ". ";
+  content: counters(item, ".") ".";
   counter-increment: item;
   margin-right: 1rem;
-  padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
   background-color: #5183f5;
   color: white;
 }
@@ -832,36 +832,42 @@ figcaption {
 
 /* line 7, src/sass/components/_descendants.scss */
 .parent > li {
-  border-bottom: 1px solid #5183f5;
+  padding: 1rem;
 }
 
-/* line 10, src/sass/components/_descendants.scss */
+/* line 11, src/sass/components/_descendants.scss */
 .parent > li:nth-child(even) {
   background-color: #f5f9fa;
 }
 
-/* line 15, src/sass/components/_descendants.scss */
+/* line 16, src/sass/components/_descendants.scss */
 .parent .descendant {
   border-left: 1px solid #5183f5;
   padding: 1rem 1rem 1rem 2rem;
 }
 
-/* line 20, src/sass/components/_descendants.scss */
+/* line 21, src/sass/components/_descendants.scss */
 .parent .female {
   color: #DB5A6B;
 }
 
-/* line 29, src/sass/components/_descendants.scss */
+/* line 30, src/sass/components/_descendants.scss */
+.section-container {
+  border-top: 1px solid #dbdbdb;
+  padding-top: 4rem;
+}
+
+/* line 35, src/sass/components/_descendants.scss */
 .custom-aside {
   width: 100%;
-  max-width: 110rem;
+  max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8rem;
   padding: 1rem;
 }
 
-/* line 37, src/sass/components/_descendants.scss */
+/* line 43, src/sass/components/_descendants.scss */
 .custom-aside .section-title {
   margin-top: 0;
   margin-bottom: 3rem;
