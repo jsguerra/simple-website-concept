@@ -5,7 +5,8 @@
   line-height: 1.618;
 
   > li {
-    border-bottom: 1px solid $light-blue;
+    padding: 1rem;
+    // margin-bottom: 1rem;
 
     &:nth-child(even) {
       background-color: $off-white;
@@ -26,9 +27,14 @@
   }
 }
 
+.section-container {
+  border-top: 1px solid #dbdbdb;
+  padding-top: 4rem;
+}
+
 .custom-aside {
   width: 100%;
-  max-width: 110rem;
+  max-width: 120rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8rem;
