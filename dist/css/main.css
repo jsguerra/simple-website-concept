@@ -475,6 +475,11 @@ ol:not(.base-list) li::before {
           box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* line 29, src/sass/components/_list.scss */
+.base-list {
+  margin-bottom: 0;
+}
+
 /* line 1, src/sass/components/_tables.scss */
 table {
   margin-bottom: 4rem;
