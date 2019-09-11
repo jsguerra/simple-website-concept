@@ -2,7 +2,7 @@ ul, ol {
   margin-bottom: 2rem;
 }
 
-ol {
+ol:not(.base-list) {
   counter-reset: item;
   padding-left: 2rem;
 
