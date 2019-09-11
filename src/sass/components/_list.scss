@@ -18,9 +18,10 @@ ol {
       content: counters(item, ".") ".";
       counter-increment: item;
       margin-right: 1rem;
-      padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+      padding: 0.2rem 0.6rem;
       background-color: $light-blue;
       color: white;
+      box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
     }
   }
 }
