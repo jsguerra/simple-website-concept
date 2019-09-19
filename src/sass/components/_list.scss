@@ -2,36 +2,36 @@ ul, ol {
   margin-bottom: 2rem;
 }
 
-ol:not(.base-list) {
-  counter-reset: item;
-  list-style: none;
-  padding-left: 2rem;
+// ol:not(.base-list) {
+//   counter-reset: item;
+//   list-style: none;
+//   padding-left: 2rem;
 
-  ol {
-    padding-left: 4rem;
-  }
+//   ol {
+//     padding-left: 4rem;
+//   }
 
-  li {
+//   li {
   
-    .custom-list {
-      margin: .5rem 0 .5rem 2.5rem;
-      padding: .4rem .4rem .4rem .8rem;
-      position: relative;
+//     .custom-list {
+//       margin: .5rem 0 .5rem 2.5rem;
+//       padding: .4rem .4rem .4rem .8rem;
+//       position: relative;
 
-      &::before {
-        font-size: 1rem;
-        content: counters(item, ".") "";
-        counter-increment: item;
-        margin-right: 1rem;
-        padding: 0.2rem 0.6rem;
-        background-color: $light-blue;
-        color: white;
-        position: absolute;
-        left: -2.5rem;
-      }
-    }
-  }
-}
+//       &::before {
+//         font-size: 1rem;
+//         content: counters(item, ".") "";
+//         counter-increment: item;
+//         margin-right: 1rem;
+//         padding: 0.2rem 0.6rem;
+//         background-color: $light-blue;
+//         color: white;
+//         position: absolute;
+//         left: -2.5rem;
+//       }
+//     }
+//   }
+// }
 
 .base-list {
   margin-bottom: 0;
