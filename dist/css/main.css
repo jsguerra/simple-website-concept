@@ -449,33 +449,36 @@ ul, ol {
 /* line 5, src/sass/components/_list.scss */
 ol:not(.base-list) {
   counter-reset: item;
+  list-style: none;
   padding-left: 2rem;
 }
 
-/* line 9, src/sass/components/_list.scss */
+/* line 10, src/sass/components/_list.scss */
 ol:not(.base-list) ol {
   padding-left: 4rem;
 }
 
-/* line 13, src/sass/components/_list.scss */
-ol:not(.base-list) li {
-  display: block;
+/* line 16, src/sass/components/_list.scss */
+ol:not(.base-list) li .custom-list {
+  margin: .5rem 0 .5rem 2.5rem;
+  padding: .4rem .4rem .4rem .8rem;
+  position: relative;
 }
 
-/* line 16, src/sass/components/_list.scss */
-ol:not(.base-list) li::before {
+/* line 21, src/sass/components/_list.scss */
+ol:not(.base-list) li .custom-list::before {
   font-size: 1rem;
-  content: counters(item, ".") ".";
+  content: counters(item, ".") "";
   counter-increment: item;
   margin-right: 1rem;
   padding: 0.2rem 0.6rem;
   background-color: #5183f5;
   color: white;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: -2.5rem;
 }
 
-/* line 29, src/sass/components/_list.scss */
+/* line 36, src/sass/components/_list.scss */
 .base-list {
   margin-bottom: 0;
 }
@@ -867,7 +870,7 @@ figcaption {
 /* line 31, src/sass/components/_descendants.scss */
 .custom-aside {
   width: 100%;
-  max-width: 120rem;
+  max-width: 70rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8rem;
