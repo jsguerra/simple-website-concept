@@ -424,17 +424,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 75rem;
+  max-width: 74rem;
+  padding: 0 2rem;
 }
 
-/* line 30, src/sass/components/_base.scss */
+/* line 31, src/sass/components/_base.scss */
 .align-left {
   float: left;
   margin-right: 4rem;
   margin-bottom: 2rem;
 }
 
-/* line 36, src/sass/components/_base.scss */
+/* line 37, src/sass/components/_base.scss */
 .align-right {
   float: right;
   margin-left: 4rem;
@@ -444,38 +445,6 @@ body {
 /* line 1, src/sass/components/_list.scss */
 ul, ol {
   margin-bottom: 2rem;
-}
-
-/* line 5, src/sass/components/_list.scss */
-ol:not(.base-list) {
-  counter-reset: item;
-  list-style: none;
-  padding-left: 2rem;
-}
-
-/* line 10, src/sass/components/_list.scss */
-ol:not(.base-list) ol {
-  padding-left: 4rem;
-}
-
-/* line 16, src/sass/components/_list.scss */
-ol:not(.base-list) li .custom-list {
-  margin: .5rem 0 .5rem 2.5rem;
-  padding: .4rem .4rem .4rem .8rem;
-  position: relative;
-}
-
-/* line 21, src/sass/components/_list.scss */
-ol:not(.base-list) li .custom-list::before {
-  font-size: 1rem;
-  content: counters(item, ".") "";
-  counter-increment: item;
-  margin-right: 1rem;
-  padding: 0.2rem 0.6rem;
-  background-color: #5183f5;
-  color: white;
-  position: absolute;
-  left: -2.5rem;
 }
 
 /* line 36, src/sass/components/_list.scss */
@@ -787,14 +756,6 @@ article .entry-header .intro {
   padding-left: 1rem;
 }
 
-/* line 29, src/sass/components/_article.scss */
-article .entry {
-  border-radius: 0.6rem;
-  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
-  padding: 6rem;
-}
-
 /* line 1, src/sass/layout/_footer.scss */
 .site-footer {
   font-size: 1.3rem;
@@ -833,54 +794,38 @@ figcaption {
 }
 
 /* line 1, src/sass/components/_descendants.scss */
-.parent {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 0.25px;
-  line-height: 1.618;
+.custom-list {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 2rem;
 }
 
-/* line 7, src/sass/components/_descendants.scss */
-.parent > li {
-  padding: 1rem;
+/* line 6, src/sass/components/_descendants.scss */
+.custom-list ol {
+  counter-reset: item;
+  list-style: none;
+  padding-left: 2rem;
 }
 
-/* line 11, src/sass/components/_descendants.scss */
-.parent > li:nth-child(even) {
-  background-color: #f5f9fa;
+/* line 14, src/sass/components/_descendants.scss */
+.custom-list li .custom-list-item {
+  position: relative;
 }
 
-/* line 16, src/sass/components/_descendants.scss */
-.parent .descendant {
-  border-left: 1px solid #5183f5;
-  padding: 1rem 1rem 1rem 2rem;
-}
-
-/* line 21, src/sass/components/_descendants.scss */
-.parent .female {
-  color: #DB5A6B;
-}
-
-/* line 26, src/sass/components/_descendants.scss */
-.section-container {
-  border-top: 1px solid #dbdbdb;
-  padding-top: 4rem;
-}
-
-/* line 31, src/sass/components/_descendants.scss */
-.custom-aside {
-  width: 100%;
-  max-width: 70rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8rem;
-  padding: 1rem;
-}
-
-/* line 39, src/sass/components/_descendants.scss */
-.custom-aside .section-title {
-  margin-top: 0;
-  margin-bottom: 3rem;
+/* line 17, src/sass/components/_descendants.scss */
+.custom-list li .custom-list-item::before {
+  font-size: 1rem;
+  content: counters(item, ".");
+  counter-increment: item;
+  position: absolute;
+  left: -2.5rem;
+  top: 50%;
+  margin-top: -1rem;
+  background: #8c7ae6;
+  color: white;
+  width: 2rem;
+  line-height: 2rem;
+  text-align: center;
 }
 
 /* line 3, src/sass/pages/_home.scss */
