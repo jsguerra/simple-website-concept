@@ -450,6 +450,12 @@ body {
 }
 
 /* line 18, src/sass/components/_base.scss */
+main {
+  background-color: #f5f9fa;
+  padding: 6rem 0;
+}
+
+/* line 23, src/sass/components/_base.scss */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -457,14 +463,14 @@ body {
   max-width: 76rem;
 }
 
-/* line 25, src/sass/components/_base.scss */
+/* line 30, src/sass/components/_base.scss */
 .align-left {
   float: left;
   margin-right: 4rem;
   margin-bottom: 2rem;
 }
 
-/* line 31, src/sass/components/_base.scss */
+/* line 36, src/sass/components/_base.scss */
 .align-right {
   float: right;
   margin-left: 4rem;
@@ -502,12 +508,10 @@ tr:nth-child(even) {
 /* line 1, src/sass/layout/_header.scss */
 .site-header {
   background-color: white;
-  -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.2);
   min-height: 6rem;
 }
 
-/* line 7, src/sass/layout/_header.scss */
+/* line 6, src/sass/layout/_header.scss */
 .site-header .inner-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,7 +531,7 @@ tr:nth-child(even) {
   margin: auto;
 }
 
-/* line 17, src/sass/layout/_header.scss */
+/* line 16, src/sass/layout/_header.scss */
 .site-header .site-logo {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
@@ -540,7 +544,7 @@ tr:nth-child(even) {
   text-align: center;
 }
 
-/* line 27, src/sass/layout/_header.scss */
+/* line 26, src/sass/layout/_header.scss */
 .site-header .site-logo:focus, .site-header .site-logo:hover {
   color: yellow;
   text-decoration: none;
@@ -738,14 +742,14 @@ tr:nth-child(even) {
 
 /* line 1, src/sass/components/_article.scss */
 article {
+  background-color: white;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.17);
-  margin-bottom: 8rem;
 }
 
 /* line 5, src/sass/components/_article.scss */
 article > header {
-  background-color: #005394;
+  background-color: #648200;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,32 +764,32 @@ article > header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 1rem;
 }
 
-/* line 15, src/sass/components/_article.scss */
+/* line 14, src/sass/components/_article.scss */
 article .family-crest {
-  background-color: #004a85;
+  background-color: #587300;
   padding: 2rem 2.5rem;
   margin: 0 4rem 0 0;
   max-width: 16rem;
 }
 
-/* line 21, src/sass/components/_article.scss */
+/* line 20, src/sass/components/_article.scss */
 article .family-crest img {
   border-radius: 100%;
 }
 
-/* line 28, src/sass/components/_article.scss */
+/* line 27, src/sass/components/_article.scss */
 article .entry-header h1 {
   font-size: 3.3rem;
   line-height: 3.3rem;
 }
 
-/* line 33, src/sass/components/_article.scss */
+/* line 32, src/sass/components/_article.scss */
 article .entry-header .intro {
   letter-spacing: 1px;
   margin: 0;
+  padding-left: 0.5rem;
 }
 
 /* line 39, src/sass/components/_article.scss */
