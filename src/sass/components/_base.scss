@@ -15,6 +15,11 @@ body {
   flex-flow: column;
 }
 
+main {
+  background-color: $off-white;
+  padding: 6rem 0;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
