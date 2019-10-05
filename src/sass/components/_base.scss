@@ -8,24 +8,18 @@
 }
 
 body {
-  font-size: 1.8rem;
-  line-height: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
   height: 100%;
   display: flex;
   flex-flow: column;
 }
 
-.intro {
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.compartment {
+.container {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  max-width: 74rem;
-  padding: 0 2rem;
+  max-width: 76rem;
 }
 
 .align-left {
