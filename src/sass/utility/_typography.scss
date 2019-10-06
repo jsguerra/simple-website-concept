@@ -3,7 +3,7 @@ $font-family-2: Georgia, 'Times New Roman', Times, serif;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-1;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .page-title {
@@ -44,12 +44,4 @@ blockquote {
   font-family: $font-family-2;
   font-size: 2rem;
   margin: 0 3rem;
-}
-
-.section-title {
-  // font-size: 2.3rem;
-  border-bottom: 1px solid #dbdbdb;
-  margin-bottom: 2rem;
-  margin-top: 4rem;
-  padding-bottom: 0.5rem;
 }
